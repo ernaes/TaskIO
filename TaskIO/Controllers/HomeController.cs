@@ -18,6 +18,7 @@ namespace TaskIO.Controllers
         [HttpPost]
         public IActionResult RegistroExitoso(Usuario usuario)
         {
+            usuario.Guardar();
             return View(usuario);
         }
 
